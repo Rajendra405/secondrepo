@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Size Body with Proper Padding</title>
+    <style>
+        body {
+            width: 210mm; /* A4 width */
+            height: 297mm; /* A4 height */
+            margin: 0 auto; /* Center the body */
+            padding: 0; /* No extra padding outside the container */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            background-color: #f0f0f0; /* Optional: background color for the body */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: calc(100% - 40px); /* Ensuring container doesn't exceed the width */
+            padding: 20px; /* Add padding inside the container */
+            border: 2px solid red; /* Example border */
+            background-color: #ffffff; /* Optional: background color for the container */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; /* Add vertical spacing between info lines */
+        }
+        .info div {
+            white-space: nowrap; /* Keeps each piece of info on one line */
+        }
+        img {
+            margin-left: 20px; /* Add gap between info and image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <div>Name: YAGATEELA RAJENDRA</div>
+            <div>Ph no: 7416892621</div>
+            <div>Email: rajendra.yagateela@gmail.com</div>
+            <div>Interests: VLSI, IoT, Embedded Systems, Mechatronics</div>
+        </div>
+        <div>
+            <img src="/mnt/data/image.png" alt="YAGATEELA RAJENDRA" width="100" height="100">
+        </div>
+    </div>
+</body>
+</html>
